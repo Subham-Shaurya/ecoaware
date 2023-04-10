@@ -21,15 +21,20 @@ body{
     height: 100vh;
     gap: 35px;
 }
-.container .box{
-    position: relative;
-    overflow-y: hidden;
+.container .box-container{
+    
 }
+.container .box{
+    /* position: relative; */
+    overflow-y: hidden; 
+}
+
 .container .box1{
     padding: 0 0 0 20px;
     width: 60vw;
     height: 100vh;
     margin-left: 20px;
+    z-index: 2;
 }
 .container .box1 .logo-label{
     margin-top: 10px;
@@ -55,8 +60,13 @@ body{
 }
 .container .box1 .main button:hover{
     background-color: rgb(43, 163, 79);
+}
 .container .box2{
-    width: 34vw;
+    width: 84vw;
+    z-index: 1;
     height: 100vh;
-    overflow: hidden;
+    background: url('19199614.jpg');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
