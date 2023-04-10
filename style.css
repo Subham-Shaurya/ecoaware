@@ -41,6 +41,7 @@ body{
 }
 .container .box1 h1{
     font-size: 4rem;
+    line-height: 2rem;
     font-family: 'Merriweather', serif;
     padding: 10px 0 5px 0;
 }
