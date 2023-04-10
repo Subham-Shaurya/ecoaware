@@ -1,4 +1,5 @@
 /* Resets */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Poppins:wght@400;700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -7,20 +8,55 @@
 }
 html, body{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 body{
-    background-color: rgb(10, 25, 35);
+    background-color: rgb(255, 255, 255);
+}
+.flex{
+    display: flex;
 }
 .container{
-    background-color: rgba(15, 14, 14, 0.211);
-    height: 150px;
-    border-bottom: 2px solid #4b4b4b;
+    width: 100vw;
+    height: 100vh;
+    gap: 35px;
 }
-.container .logo-label{
-    color: #dcdcdc;
-    font-size: 3rem;
-    padding: 10px;
+.container .box{
+    position: relative;
+    overflow-y: hidden;
+}
+.container .box1{
+    padding: 0 0 0 20px;
+    width: 60vw;
+    height: 100vh;
     margin-left: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
+.container .box1 .logo-label{
+    margin-top: 10px;
+}
+.container .box1 h1{
+    font-size: 4rem;
+    font-family: 'Merriweather', serif;
+    padding: 10px 0 5px 0;
+}
+.container .box1 p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    padding: 10px 0;
+    margin-top: 20px;
+}.container .box1 .main button{
+    border: none;
+    background-color: rgb(63, 211, 107);
+    border-radius: 100px;
+    color: #ffff;
+    padding: 15px 40px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+.container .box1 .main button:hover{
+    background-color: rgb(43, 163, 79);
+.container .box2{
+    width: 34vw;
+    height: 100vh;
+    overflow: hidden;
+}
