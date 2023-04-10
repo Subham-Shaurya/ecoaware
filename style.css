@@ -1,0 +1,26 @@
+/* Resets */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: blanchedalmond; */
+}
+html, body{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(10, 25, 35);
+}
+.container{
+    background-color: rgba(15, 14, 14, 0.211);
+    height: 150px;
+    border-bottom: 2px solid #4b4b4b;
+}
+.container .logo-label{
+    color: #dcdcdc;
+    font-size: 3rem;
+    padding: 10px;
+    margin-left: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
