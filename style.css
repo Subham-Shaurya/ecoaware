@@ -1,22 +1,21 @@
 /* Resets */
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&family=Rubik+Dirt&family=Rubik+Distressed&family=Rubik+Wet+Paint&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* background-color: blanchedalmond; */
 }
 html, body{
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
 body{
-    background-color: rgb(255, 255, 255);
 }
 .flex{
     display: flex;
 }
 .container{
+    background-color: rgb(17, 7, 65);
     width: 100vw;
     height: 100vh;
     gap: 35px;
@@ -34,24 +33,35 @@ body{
     width: 60vw;
     height: 100vh;
     margin-left: 20px;
-    z-index: 2;
+    /* z-index: 2; */
+    flex-direction: column;
 }
 .container .box1 .logo-label{
     margin-top: 10px;
+    padding: 20px 10px;
 }
-.container .box1 h1{
+.container .box1 .logo-label h1{
+    font-size: 2.5rem;
+    color: #85d416;
+    font-family: 'Rubik Dirt', cursive;
+
+}
+.container .box1 .main h1{
     font-size: 4rem;
-    font-family: 'Merriweather', serif;
-    padding: 10px 0 5px 0;
-    color: #252525;
+    font-weight: 500;
+    font-family: 'Rubik Distressed', cursive;
+    padding: 40px 0 5px 0;
+    color: #c9c9c9;
 }
 .container .box1 p{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
     padding: 10px 0;
     margin-top: 20px;
-    color: #555;
-}.container .box1 .main button{
+    color: #acacaccc;
+}
+
+.container .box1 .main button{
     border: none;
     /* background-color: rgb(63, 211, 107); */
     background: linear-gradient(to bottom right,#1ddebe, #07cfae, #0688c4);
@@ -62,14 +72,206 @@ body{
     font-size: 1.2rem;
 }
 .container .box1 .main button:hover{
-    background-color: rgb(43, 163, 79);
+    background: linear-gradient(to bottom right,#1aafbd, #059a81, #169a84);
 }
 .container .box2{
-    width: 84vw;
+    position: absolute;
+    right: 0;
+    width: 500px;
     z-index: 1;
     height: 100vh;
     background: url('19199614\(1\).jpg');
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
+
+}
+
+/* SECTIONS RESETS */
+.container1{
+    padding: 40px 20px 20px 20px;
+    width: 100vw;
+    background-color: rgb(17, 7, 65);
+}
+/* Section-header */
+.section-header{
+    margin-top: 80px;
+    width: 500px;
+    padding: 10px;
+    margin-inline: auto;
+}
+.section-header h2{
+    color: #85d416;
+    font-size: 2rem;
+    font-family: 'Roboto',sans-serif;
+}
+.section-header h2 img{
+    vertical-align: middle;
+    padding: 10px;
+    height: 64px;
+}
+
+/* Env-Issues Section */
+.env-issues{
+    padding-top: 90px;
+    margin-inline: auto;
+    width: 94vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 30%;
+    gap: 35px;
+    row-gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.env-issues .issues{
+    width: 360px;
+    min-height: 440px;
+    background-color: rgb(255, 255, 255);
+    /* border: 2px solid rgb(134, 206, 47); */
+    border-radius: 10px;
+    overflow: hidden;
+    flex-direction: column;
+}
+.env-issues .issues img{
+    width: 360px;
+    height: 240px;
+}
+.env-issues .issues .iss-detail{
+    padding: 5px 20px 5px 25px;
+}
+.env-issues .issues .iss-detail h2{
+    padding-bottom: 10px;
+    font-size: 1.8rem;
+    color: #7ed209;
+    font-family: 'Roboto',sans-serif;
+}
+.env-issues .issues .iss-detail p{
+    padding-bottom: 10px;
+    font-size: 1rem;
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+}
+.env-issues .issues .iss-detail button{
+    width: 300px;
+    height: 45px;
+    background-color: #85d416;
+    border-radius: 10px;
+    border: none;
+    /* padding: 5px 5px; */
+    font-size: 1rem;
+    color: #ffff;
+
+}
+.env-issues .issues .iss-detail button i{
+    vertical-align: middle;
+}
+.env-issues .issues .iss-detail button:hover{
+    background-color: #67ab07;
+}
+
+/* Footer */
+footer{
+    bottom: 0;
+}
+footer .container1{
+    background-color: #000000;
+    height: 610px;
+}
+.footer-top{
+    background-color: #85d416;
+    width: 80vw;
+    height: 220px;
+    border-radius: 30px;
+    margin-inline: auto;
+    position: relative;
+    /* top: -60%; */
+    transform: translateY(-65%);
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 30px;
+}
+.footer-top h3{
+    font-size: 2.3rem;
+    color: #fff;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+.footer-top h2{
+    font-size: 4rem;
+    padding: 10px;
+    color: #0c1129;
+    font-family: 'Poppins',sans-serif;
+    font-family: 'Rubik Wet Paint', cursive;
+}
+
+.footer-data{
+    margin-inline: auto;
+    width: 86vw;
+    min-height: 300px;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: nowrap;
+    border-bottom: 1px solid #85d416;
+}
+.footer-data .footer-data1{
+    width: 75vw;
+    padding: 10px 0px 0 0;
+}
+.footer-data .footer-data1 h1{
+    font-family: 'Rubik Dirt', cursive;
+    font-size: 2rem;
+    color: #85d416;
+    padding: 0px 0px 80px 0px;
+    margin-left: 30px;
+}
+.footer-data .footer-data1 .quicklinks{
+    padding: 20px 20px 20px 0px;
+}
+.footer-data .footer-data1 .quicklinks a{
+    text-decoration: none;
+    color: #85d416;
+    font-size: 1rem;
+    font-family: 'Roboto',sans-serif;
+    margin-left: 30px;
+}
+.footer-data .footer-data2{
+    width:25vw;
+    padding: 10px;
+    text-align: left;
+}
+.footer-data .footer-data2 h2{
+    color: #7ed209;
+    font-size: 1.5rem;
+    padding: 0px 0px 20px 0px;
+    font-family: 'Roboto',sans-serif;
+}
+.footer-data .footer-data2 h2 i{
+    vertical-align: middle;
+}
+.footer-data .footer-data2 p{
+    color: #d0f0a4;
+    font-size: 1rem;
+    font-family: 'Roboto',sans-serif;
+}
+
+.upscroll{
+    display: none;
+    position: fixed;
+    background-color: #85d416;
+    border: none;
+    border-radius: 5px;
+    right: 30px;
+    bottom:80px;
+    width: 35px;
+    height: 35px;
+    z-index: 99;
+    cursor: pointer;
+    font-size: 2rem;
+    outline: none;
+    color: #ffff;
+}
+.upscroll:hover{
+    background-color: #67ab07;
 }
