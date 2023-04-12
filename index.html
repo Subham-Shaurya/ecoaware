@@ -10,22 +10,135 @@
 </head>
 <body>
     <section class="container flex">
-        <div class="box-container">
-            <div class="box box1">
-                <div class="logo-label">
-                    <img src="LOGO_.png" alt="">
+        <div class="box box1 flex">
+            <div class="logo-label">
+                <h1>ECO<span style="color: #ffff;">AWARE</span></h1>
+                <!-- <img src="LOGO_.png" alt=""> -->
+            </div>
+            <div class="main">
+                <h1>Act today, sustain tomorrow: <span style="color: #deeb8f;">Choose sustainability</span></h1>
+                <p>Commit to a sustainable lifestyle for a healthier planet and a brighter tomorrow.</p>
+                <button onclick="">Take a step forward  <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+        <div class="box box2"></div>
+    </section>
+
+    <!-- Env-issues -->
+    <section class="container1">
+        <div class="section-header">
+            <h2>Environmental Issues <img src="right-arrow neon64.png" alt=""></h2>
+        </div>
+
+        <div class="env-issues flex">
+            <div class="issues flex">
+                <img src="gradient-climate-change-concept-illustration_23-2149084518(1).jpg" alt="Climate Change">
+                <div class="iss-detail">
+                    <h2>Climate Change</h2>
+                    <p>We are running out of time, and we must act now to avoid the worst impacts of climate change. It demands urgent global action.</p>
+                    <button onclick="">Know More <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
                 </div>
-                <div class="main">
-                    <h1>Act today, sustain tomorrow: Choose sustainability</h1>
-                    <p>Commit to a sustainable lifestyle for a healthier planet and a brighter tomorrow.</p>
-                    <button>Take a step forward  <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="issues">
+                <img src="biodiversity.jpg" alt="Loss of Biodiversity"height="245px">
+                <div class="iss-detail">
+                    <h2>Loss of Biodiversity</h2>
+                    <p>Biodiversity loss is critical, species extinction rates at an all-time high; urgent conservation efforts are necessary.</p>
+                    <button onclick="">Know More <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+                </div>
+
+            </div>
+            <div class="issues">
+                <img src="deforestation.jpg" alt="Deforestation">
+                <div class="iss-detail">
+                    <h2>Deforestation</h2>
+                    <p>Deforestation is a critical issue, causing irreversible damage to the ecosystems, and accelerating the pace of climate change.</p>
+                    <button onclick="">Know More <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <div class="issues"> 
+                <img src="pollution.jpg" alt="Pollution">
+                <div class="iss-detail">
+                    <h2>Pollution</h2>
+                    <p>Pollution is a serious problem that requires urgent action to prevent further harm to the environment and human health.</p>
+                    <button onclick="">Know More <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <div class="issues">
+                <img src="Ocean Acidification.jpg" alt="Ocean Acidification">
+                <div class="iss-detail">
+                    <h2>Ocean Acidification</h2>
+                    <p>Ocean acidification caused by increased carbon emissions threatens marine life and ecosystems; urgent action needed.</p>
+                    <button onclick="">Know More <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <div class="issues">
+                <img src="water scarcity.jpg" alt="Water Scarcity">
+                <div class="iss-detail">
+                    <h2>Water Scarcity</h2>
+                    <p>Water scarcity is a critical issue, threatening food security, public health, and economic development worldwide.</p>
+                    <button onclick="">Know More <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
                 </div>
             </div>
         </div>
-        <div class="box box2">
-            <img src="" alt="">
+    </section>
+    <section class="container1">
+        <div class="container1 flex">
+            <div class="recycleb flex">
+                <img src="rec_1.j" alt="">
+            </div>
+            <div class="recycleb flex">
+
+            </div>
+            <div class="recycleb flex">
+
+            </div>
         </div>
     </section>
-    <section style="height: 400px;"></section>
+    <section style="height: 300px; background-color: rgb(17,7,65);">
+
+    </section>
+    <footer>
+        <div class="container1">
+            <div class="footer-top flex">
+                <h3>A Better Climate Future</h3>
+                <h2>Starts With You</h2>
+            </div>
+            <div class="footer-data flex">
+                <div class="footer-data1">
+                    <h1>ECO<span style="color: #ffff;">AWARE</span></h1>
+                    <div class="quicklinks">
+                        <a href="#">Climate Change</a>
+                        <a href="#">Recycle Issue</a>
+                        <a href="#">Pollution</a>
+                        <a href="#">Water Scarcity</a>
+                    </div>
+                </div>
+                <div class="footer-data2">
+                    <h2>Contact us <i class="fa-solid fa-envelope"></i></h2>
+                    <p>emailaddress@gmail.com</p>
+                </div>  
+            </div>
+            <p style="color: beige; font-size: 0.8rem; text-align: center; padding: 10px; margin-top: 5px; font-family: 'Poppins',sans-serif;">&#169 2023 | All right reserved</p>
+        </div>
+        <button class="upscroll" onclick="topfunction()" id="upscroll" title="Go to top"><i class="fa-solid fa-angle-up"></i></button>
+    </footer>
+
+    <!-- Upscroll button javascript -->
+    <script>
+        let upbutton = document.getElementById("upscroll");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction(){
+            if (document.body.scrollTop >20 || document.documentElement.scrollTop >20){
+                upbutton.style.display = "block";
+            }else{
+                upbutton.style.display = "none";
+            }
+        }
+        function topfunction(){
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop=0;
+        }
+    </script>
 </body>
 </html>
