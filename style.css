@@ -219,7 +219,7 @@ body{
 
 } */
 .recycle-section .rbox1{
-    background: url('reduce.jpg');
+    background: url('./pics/reduce.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
